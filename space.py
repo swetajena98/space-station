@@ -9,4 +9,4 @@ result = json.loads(response.read())
 print('people in space: ',result['number'])
 people = result['people']
 for p in people:
- print(p)
+ print(p['name'])
