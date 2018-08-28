@@ -3,13 +3,6 @@ import json
 import turtle
 import urllib.request
 import time
-'''url = 'http://api.open-notify.org/astros.json'
-response = urllib.request.urlopen(url)
-result = json.loads(response.read())
-print('people in space: ',result['number'])
-people = result['people']
-for p in people:
- print(p['name'],'in',p['craft'])'''
 url = 'http://api.open-notify.org/iss-now.json'
 response = urllib.request.urlopen(url)
 result = json.loads(response.read())
