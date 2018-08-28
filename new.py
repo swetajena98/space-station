@@ -36,6 +36,5 @@ url = url + '?lon='+str(lon)+'&lat='+str(lat)
 response = urllib.request.urlopen(url)
 result = json.loads(response.read())
 over = result['response'][1]['risetime']
-#print(over)
 style = ('Arial', 6 ,'bold')
 location.write(time.ctime(over) , font=style)
